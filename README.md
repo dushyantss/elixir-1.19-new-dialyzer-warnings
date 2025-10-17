@@ -54,6 +54,8 @@ mix dialyzer
 
 **Expected output:** 8 dialyzer errors related to opaque type mismatches with `MapSet.internal(_)`.
 
+**Don't want to run dialyzer?** See [DIALYZER_ERRORS.md](DIALYZER_ERRORS.md) for the exact error output.
+
 ## Runtime Verification
 
 The code works perfectly at runtime! You can verify this:
