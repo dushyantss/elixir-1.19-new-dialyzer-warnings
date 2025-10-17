@@ -10,7 +10,7 @@ defmodule ElixirDialyzerWarnings.MixProject do
       deps: deps(),
       name: "Elixir 1.19 New Dialyzer Warnings",
       description: "Reproduction cases for new dialyzer warnings in Elixir 1.19 / Erlang 28.1",
-      source_url: "https://github.com/YOUR_USERNAME/elixir-1.19-new-dialyzer-warnings"
+      source_url: "https://github.com/dushyantss/elixir-1.19-new-dialyzer-warnings"
     ]
   end
 

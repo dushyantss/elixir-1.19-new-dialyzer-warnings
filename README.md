@@ -39,7 +39,7 @@ Ecto.Multi.new()
 URI.to_string(%URI{scheme: "https", host: "example.com"})
 ```
 
-## Running the Examples
+## Reproducing the Warnings
 
 ```bash
 # Install dependencies
@@ -48,11 +48,11 @@ mix deps.get
 # Compile the project
 mix compile
 
-# Run dialyzer (this will show the warnings)
+# Run dialyzer (this will fail with 8 warnings)
 mix dialyzer
 ```
 
-Expected output: 8 dialyzer warnings related to opaque type mismatches.
+**Expected output:** 8 dialyzer errors related to opaque type mismatches with `MapSet.internal(_)`.
 
 ## Runtime Verification
 
@@ -63,7 +63,7 @@ iex -S mix
 iex> ElixirDialyzerWarnings.Examples.run_all_examples()
 ```
 
-All examples will execute successfully, demonstrating that this is a dialyzer-only issue.
+All examples will execute successfully, demonstrating that this is a dialyzer-only issue, not a runtime bug.
 
 ## Environment
 
